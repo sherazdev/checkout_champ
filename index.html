@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Checkout Champ</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"/>
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <section>
+        <main>
+            <header class="header_content order-2 order-md-1">
+                <div class="container py-3">
+                    <div class="row text-center align-items-center">
+                        <!-- Logo -->
+                        <div class="col-12 col-md-3 mb-2">
+                            <div class="logo">
+                                <img src="assets/image/logo.png" alt="Logo" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Free USA Shipping -->
+                        <div class="col-6 col-md-2 mb-2">
+                            <div class="icon-text">
+                                <img src="assets/image/benefit.png" alt="Free USA Shipping" class="img-fluid" style="margin-right: 10px;">
+                            </div>
+                        </div>
+                        <!-- 30-Day Money Back Guarantee -->
+                        <div class="col-6 col-md-2 mb-2">
+                            <div class="icon-text">
+                                <img src="assets/image/Frame 2087326454.png" alt="30-Day Money Back Guarantee" class="img-fluid" style="margin-right: 10px;">
+                            </div>
+                        </div>
+                        <!-- Pure and Authentic, 3rd Party Tested -->
+                        <div class="col-6 col-md-2 mb-2">
+                            <div class="icon-text">
+                                <img src="assets/image/Frame 2087326455.png" alt="Pure and Authentic, 3rd Party Tested" class="img-fluid" style="margin-right: 10px;">
+                            </div>
+                        </div>
+                        <!-- Customer Count -->
+                        <div class="col-12 col-md-3 mb-2">
+                            <div class="customer-count">
+                                <img src="assets/image/Frame 2087326451.png" alt="Customer Count" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <main>
+        </section>
+        <section>
+            <div class="container mt-5">
+                <div class="row gx-5">
+                    <!-- Checkout Form Section -->
+                     
+                    <div class="col-md-6">
+                        <div class="mb-4 order-1 order-md-2"> 
+                            <div class="p-3" style="background-color: #A8D0B1; border: 2px dashed #000; border-radius: 13px; text-align: center;">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="assets/image/order_Capa_1.png" alt="" class="me-2">
+                                    <p class="order_text mb-0" id="orderText">YOUR ORDER IS RESERVED FOR THE NEXT <span id="countdown">10:00</span></p>
+                                </div>
+                            </div>
+                        </div>   
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" style="width: 100%; border-radius: 8px;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" style="width: 100%;  border-radius: 8px;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fullname" class="form-label">Full name</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="Enter full name" style="width: 100%;  border-radius: 8px;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter address" style="width: 100%;  border-radius: 8px;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apartment" class="form-label">Apartment, suite, etc.</label>
+                                <input type="text" class="form-control" id="apartment" placeholder="Enter apartment, suite, etc." style="width: 100%;  border-radius: 8px;">
+                            </div>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="country" style="width: 100%;  border-radius: 8px;">
+                                    <option selected>Choose State</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 d-flex">
+                                <div style="flex: 1;">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="City" style="width: 100%;  border-radius: 8px;">
+                                </div>
+                                <div class="ms-2" style="flex: 1;">
+                                    <label for="zipcode" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" style="width: 100%;  border-radius: 8px;">
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div>
+                            <div class="mb-3 mt-5">
+                                <input type="checkbox" id="sameAddress" class="form-check-input">
+                                <label for="sameAddress" class="form-check-label">Is the Billing and Shipping address the same?</label>
+                            </div>
+                            
+                            <form id="addressForm">
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter address" style=" border-radius: 8px;">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apartment" class="form-label">Apartment, suite, etc.</label>
+                                    <input type="text" class="form-control" id="apartment" placeholder="Enter apartment, suite, etc." style=" border-radius: 8px;">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="country" class="form-label">Country</label>
+                                    <select class="form-select" id="country" >
+                                        <option selected>Choose State</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 d-flex" style="gap: 15px;">
+                                    <div style="flex: 1;">
+                                        <label for="city" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="City" style=" border-radius: 8px;">
+                                    </div>
+                                    <div class="mb-3" style="flex: 1;">
+                                        <label for="zipcode" class="form-label">Zip Code</label>
+                                        <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" style=" border-radius: 8px;">
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="container mt-5" style="padding: 0;">
+                            <!-- Shipping Method -->
+                            <div class="shipping-method mb-4">
+                                <strong class="mb-4 method-header" style="font-size: 20px; font-weight: 700;">Shipping Method</strong>
+                                <div class="border p-3 mb-3 mt-4 rounded">
+                                    <div class="radio-option d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" id="expressShipping" name="shippingMethod" class="form-check-input me-2">
+                                            <div>
+                                                <label class="d-block m-0" for="expressShipping"> <span style="font-size: 16px; font-weight: 500;">Express Shipping</span> <img src="assets/image/Capa_1.png" alt="">  </label>
+                                                <small style="font-size: 16px; font-weight: 300;">5-7 days shipping</small>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span style="font-weight: 500; font-size: 16px; color: #304230;">$25.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="border p-3 rounded">
+                                    <div class="radio-option d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" id="standardShipping" name="shippingMethod" class="form-check-input me-2" checked>
+                                            <div>
+                                                <label class="d-block m-0" for="standardShipping"><span style="font-size: 16px; font-weight: 500;">Standard Shipping</span> <img src="assets/image/Capa_2.png" alt="">  </label>
+                                                <small style="font-size: 16px; font-weight: 300;">7-10 days shipping</small>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span style="font-weight: 500; font-size: 16px; color: #304230;">FREE</span>
+                                        </div>
+                                    </div>
+                            </div>
+                                
+                            </div>
+                    
+
+                            <!-- Payment Method -->
+                             <div class="payment-title mb-3" >
+                                <strong class="shipping-method mb-4"style="font-size: 20px; font-weight: 700;">Payment Method</strong>
+
+                             </div>
+
+                             <div class="border p-3 rounded">
+                                <div class="payment-method">
+                                    <!-- Credit Card Option -->
+                                    <div class="radio-option mb-4 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <img src="assets/image/Card Icons Container.png" alt="">
+                                            <label for="creditCard" style="font-weight: 500; font-size: 13px; color: #000000;">Credit Card</label>
+                                        </div>
+                                        <input type="radio" id="creditCard" name="paymentMethod" class="form-check-input" onclick="toggleForm('creditCardForm')" checked>
+                                    </div>
+                            
+                                    <!-- Credit Card Form (hidden by default) -->
+                                    <div id="creditCardForm" class="credit-card-form">
+                                        <div class="mb-3 position-relative">
+                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="border-radius: 8px 0 0 8px; border-right: none; background-color: #fff;">
+                                                    <img src="assets/image/Payment method icon.png" height="25px">
+                                                </span>
+                                                <input type="text" class="form-control ps-2" id="cardNumber"  
+                                                    pattern="\d{16}" oninput="formatCardNumber(this)" 
+                                                    maxlength="19" placeholder="0000 0000 0000 0000" style="border-radius: 0 8px 8px 0; border-left: 0;">
+                                            </div>
+                                        </div>
+                                        
+                            
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="expirationDate" class="form-label">Expiration Date</label>
+                                                <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" style=" border-radius: 8px; padding: 1.2rem .75rem;">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="cvv" class="form-label">CVV</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="cvv" placeholder="***" style="width: auto;" style=" border-radius: 8px;">
+                                                    <span class="input-icon" style="display: inline-flex; align-items: center; padding-left: 5px;">
+                                                        <img src="assets/image/help-circle.png" alt="" style="height: 24px;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border p-3 mt-4 rounded">
+                                <div class="radio-option mt-4 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/image/PayPal 1.png" alt="PayPal" height="25" class="me-2">
+                                        <label for="paypal" class="mb-0" style="font-weight: 500; font-size: 13.93px; color: #000000;">Pay with PayPal</label>
+                                    </div>
+                                    <input type="radio" id="paypal" name="paymentMethod" class="form-check-input" onclick="toggleForm('creditCardForm', false)">
+                                </div>
+                                
+                            </div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary img-fluid" style="border: none; background: transparent; padding: 0;">
+                                    <img src="assets/image/button.png" alt="Button" class="img-fluid">
+                                </button>
+                            </div>
+                            
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="me-3" style="white-space: nowrap;">
+                                    <img src="assets/image/outline.png" alt=""> Pure, Authentic, 3rd Party Lab Tested
+                                </div>
+                                <div class="me-3" style="white-space: nowrap;">
+                                    <img src="assets/image/v-Group.png" alt=""> 30 Days Money Back Guarantee
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <!-- Cart Summary Section -->
+                    <div class="col-md-6">
+                        <div class="card mb-5" style="border: 0;">
+                            <div class="card-header d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #07200C; background: transparent;height: 76px;" onclick="toggleCartItems()">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-cart-plus me-2 cart-icon"></i>
+                                    <strong class="me-2">Cart</strong>
+                                    <i id="chevron-icon" class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <strong class="me-2">$218.39</strong>
+                            </div>
+                            
+                            <div id="cart-items" style="display: block;">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-start mt-5" style="border: 0;">
+                                        <img src="assets/image/product-1.png" alt="" style="margin-right: 10px;">
+                                        <div class="flex-grow-1">
+                                            <div class="title-summary">CURED® Pure Shilajit Gummies</div>
+                                            <div class="short-title">30 Day Supply</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                                <strong class="me-8">$39.99</strong>
+                                                <button class="btn btn-link text-danger" aria-label="Delete item" style="padding: 0; color: #000000;">
+                                                    <i style="padding: 0; color: #000000;" class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-start mt-2 ">
+                                        <img src="assets/image/pro-2.png" alt="" style="margin-right: 10px;">
+                                        <div class="flex-grow-1">
+                                            <div class="title-summary">CURED® Ashwagandha Gummies</div>
+                                            <div class="short-title">60 Day Supply</div>
+                                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                                <strong class="me-8">$59.99</strong>
+                                                <button class="btn btn-link text-danger" aria-label="Delete item" style="padding: 0;">
+                                                    <i style="padding: 0; color: #000000;"  class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="list-group-item" style="border: 0;">
+                                <div class="input-group mb-3" style="position: relative; height: 65px;">
+                                    <input type="text" class="form-control" placeholder="Discount code" 
+                                           style="background-image: url('assets/image/dis_Capa_1.png'); 
+                                                  background-repeat: no-repeat; 
+                                                  background-position: 10px center; 
+                                                  padding-left: 40px;">
+                                
+                                    <!-- Button inside the input field -->
+                                    <button class="btn btn-primary" type="button" 
+                                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background-color: transparent; color: #000; border: 0; pointer-events: auto;">
+                                        <strong>Apply</strong>
+                                    </button>
+                                </div>
+                                
+                            </li>
+                            
+                            
+                                <li class="list-group-item mb-3" style="border: none; ">
+                                  <span class="short-title">Tax</span>   <strong class="float-end">$9.98</strong>
+                                </li>
+                                <li class="list-group-item mb-3" style="border: none;">
+                                    <span class="short-title">Shipping</span>  <strong class="float-end">FREE</strong>
+                                </li>
+                                <li class="list-group-item mb-3" style="border: none;">
+                                    <span class="short-title"> Discount</span>  <strong class="float-end">-$10.00</strong> <!-- Discount icon -->
+                                </li>
+                                <li class="list-group-item mb-5" style="border: none;">
+                                    <strong >Total</strong>  <strong class="float-end">$88.98</strong>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="outer-card d-flex justify-content-center align-items-center " style="position: relative;" >
+                            <!-- Main card -->
+                            <div class="card main-card" style=" background-color: #A8D0B1;  border-radius: 8px; padding: 20px; text-align: center; position: relative; width: 350px; border: 2px solid #02350D;">
+                                <div class="product-img mb-5">
+                                    <img src="assets/image/image-Photoroom (6) 1.png" alt="Product Image">
+                                </div>
+                                <div class="imge-title mt-5" style="margin-bottom: 10px;">
+                                    <img src="assets/image/image 5.png" alt="" width="62.65px" height="17px">
+                                </div>
+                                <ul class="list-group list-group-flush" style="border: 0;">
+                                    <!-- First card contents -->
+                                    <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                        <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                        <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px;font-size: 15px; font-weight: 400;" >Herbal Blend</span>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                        <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                        <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Optimised Dosing</span>
+                                    </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Fast Nutrient Absorption</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Encourages Consistency</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Satisfaction Guarantee</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Drug Free</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">3rd Party Lab Tested</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center mt-2" style="border-radius: 6.62px;">
+                                    <input type="checkbox" class="form-check-input" style="background-color: #75B96A; color: #fff; border: none; width: 20px; height: 20px; border-radius: 50%;" checked>
+                                    <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 15px; font-weight: 400;">Transparent Ingredients</span>
+                                </li>
+                            </ul>
+                           
+                            </div>
+                            <div class="second-card" style=" border-left: 0px solid #575656; border-radius: 8px;  margin: 20px auto;">
+                                <div class="card main-card" style="background-color: #EAEAEA; width: 247px; padding: 10px; border-radius: 8px;">
+                                    <div class="product-img mb-3" style="text-align: center;">
+                                        <img class="img-fluid" src="assets/image/xmz12x_non_brand_white_plain_packaging_of_bottle_drink_pills_dr_f32abcb0-9c9a-4a1c-be39-711955d9b75a-PhotoRoom 1.png" alt="Product Image">
+                                    </div>
+                                    <div class="imge-title mt-3" style="text-align: center; margin-bottom: 15px;">
+                                        <h3 class="tra_title" style="font-size: 1.4rem;">Traditional methods</h3>
+                                    </div>
+                                    <ul class="list-group list-group-flush" style="border: 0; padding: 0;">
+                                        <!-- First card contents -->
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Artificial ingredients</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Low dosing</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Slow absorption</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Tastes like dirt</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">No guarantee</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Drug free</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">3rd Party Lab Tested</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center" style="border-radius: 6.62px; padding: 8px 14px;">
+                                            <img src="assets/image/cross_Icon.png" alt="Cross Icon" style="width: 20px; height: 20px;">
+                                            <span style="background-color: #fff; padding: 5px; border-radius: 8px; margin-left: 10px; font-size: 13px; font-weight: 400;">Unknown ingredients</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                          
+                            </div>
+                            <div class="vs">
+                                <img src="assets/image/Group 1000004290.png" alt="" style=" position: absolute;
+                                right: 41%;
+                                top: 12%;
+                                transform: translate(-43%,-12%);">
+                            </div>
+                        </div>
+
+                        <div id="clientReviewCarousel" class="carousel slide mt-2" data-ride="carousel">
+                            <div class="carousel-inner border-dotted" style="border: 2px dashed #02350D; text-align: center; background-color: #A8D0B1; border-radius: 5px; line-height: 26px; padding: 20px 0;">
+                                
+                                <div class="carousel-item active">
+                                    <div class="review">
+                                        <img src="assets/image/Group 471.png" alt="">
+                                    </div>
+                                    <div class="para">
+                                        <p style="font-size: 18px; font-weight: 400">‘’Been taking Cured now every day for 5 weeks <br> and can't imagine myself stopping! It has <br> noticeably reduced my stress and as a result I <br> have had a higher sex drive. My boyfriend and I <br> enjoy taking it together as a ritual before bed’’</p>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="assets/image/client_Icon.png" alt=""><span style="margin: 0px 5px; ">- Ellie M.</span><img src="assets/image/client_review.png" alt="">
+                                    </div>
+                                </div>
+                        
+                                <div class="carousel-item">
+                                    <div class="review">
+                                        <img src="assets/image/Group 471.png" alt="">
+                                    </div>
+                                    <div class="para">
+                                        <p style="font-size: 18px; font-weight: 400">‘’Been taking Cured now every day for 5 weeks <br> and can't imagine myself stopping! It has <br> noticeably reduced my stress and as a result I <br> have had a higher sex drive. My boyfriend and I <br> enjoy taking it together as a ritual before bed’’</p>
+                                    </div>
+                                    <div class="client-img">
+                                        <img src="assets/image/client_Icon.png" alt=""><span style="margin: 0px 5px; ">- Ellie M.</span><img src="assets/image/client_review.png" alt="">
+                                    </div>
+                                </div>
+                        
+                                <!-- Add more carousel-item sections here for additional reviews -->
+                        
+                            </div>
+                            
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#clientReviewCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#clientReviewCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        
+
+                        <div class="cured_vip_section" style="position: relative;">
+                            <img  class="img-fluid" src="assets/image/Frame 2087326461.png" alt="">
+                            <div class="text-div" style="position: absolute;">
+                              <p > <strong>Cured VIP CLUB</strong> <br>
+                                Join for free and get our special Shilajit Resin  and extended 90 day money back guarantee on all Cured gummies!
+                             </p> 
+                             </div>
+                        </div>
+
+                        <div class="img-section-footer">
+                            <div class="row">
+                                <div class="col-4 mb-3 text-center">
+                                    <img src="assets/image/Group 1000004432.png" alt="" class="img-fluid">
+                                    <div class="mt-2">
+                                    <span>Peanut Free</span>
+                                </div>
+                                </div>
+                                <div class="col-4 mb-3 text-center">
+                                    <img src="assets/image/Group 1000004431.png" alt="" class="img-fluid">
+                                    <div class="mt-2">
+                                    <span>Gluten Free</span>
+                                </div>
+                                </div>
+                                <div class="col-4 mb-3 text-center">
+                                    <img src="assets/image/Group 1000004430.png" alt="" class="img-fluid">
+                                    <div class="mt-2">
+                                    <span>Dairy Free</span>
+                                </div>
+                                </div>
+                           
+                            <div class="col-4 mb-3 text-center">
+                                <img src="assets/image/Group 1000004429.png" alt="">
+                                <div class="mt-2">
+                                <span>Made in FDA Registered Facility</span>
+                            </div>
+                            </div>
+                                <div class="col-4 mb-3 text-center">
+                                <img src="assets/image/Group 1000004434.png" alt="">
+                                <div class="mt-2">
+                                <span>Made in the USA</span>
+                            </div>
+                            </div>
+                            <div class="col-4 mb-3 text-center">
+                                <img src="assets/image/Group 1000004429.png" alt="" class="img-fluid">
+                                <div class="mt-2">
+                                    <span>Made in cGMP Certified Facility</span>
+                                </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.min.js"></script>
+                <!-- jQuery and Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+            <script>
+                var input = document.querySelector("#phone");
+                intlTelInput(input, {
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js" 
+                });
+
+
+            fetch('https://restcountries.com/v3.1/all')
+            .then(response => response.json())
+            .then(data => {
+                const countrySelect = document.getElementById("country");
+
+                data.forEach(country => {
+                    const option = document.createElement("option");
+                    option.value = country.cca2; // You can use cca2 for country code
+                    option.textContent = country.name.common; // Get the common name
+                    countrySelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching country data:', error));
+
+
+            document.addEventListener("DOMContentLoaded", function() {
+                const sameAddressCheckbox = document.getElementById("sameAddress");
+                const addressForm = document.getElementById("addressForm");
+
+                // Hide the form initially if the checkbox is checked
+                addressForm.style.display = sameAddressCheckbox.checked ? "none" : "block";
+
+                sameAddressCheckbox.addEventListener("change", function() {
+                    if (this.checked) {
+                        addressForm.style.display = "none"; // Hide the form
+                    } else {
+                        addressForm.style.display = "block"; // Show the form
+                    }
+                });
+            });
+            function toggleForm(formId) {
+                var form = document.getElementById(formId);
+                if (document.getElementById('creditCard').checked) {
+                    form.style.display = 'block'; // Show the form when credit card is selected
+                } else {
+                    form.style.display = 'none'; // Hide the form otherwise
+                }
+            }
+
+            // Ensure the form shows initially when loaded if checked
+            window.onload = function() {
+                toggleForm('creditCardForm');
+            }
+            function formatCardNumber(input) {
+            // Remove all non-digit characters (including spaces)
+            let value = input.value.replace(/\D/g, '');
+
+            // Group digits in sets of 4 and insert spaces
+            let formattedValue = value.match(/.{1,4}/g)?.join(' ') || '';
+
+            // Set the formatted value back to the input
+            input.value = formattedValue;
+        }
+        function toggleForm(formId, show = true) {
+            const creditCardForm = document.getElementById(formId);
+            if (show) {
+                creditCardForm.style.display = 'block'; // Show the form for credit card
+            } else {
+                creditCardForm.style.display = 'none'; // Hide the form for PayPal
+            }
+        }
+
+        // Initialize form visibility based on selected radio button
+        document.addEventListener('DOMContentLoaded', function() {
+            const creditCardRadio = document.getElementById('creditCard');
+            const creditCardForm = document.getElementById('creditCardForm');
+
+            if (creditCardRadio.checked) {
+                creditCardForm.style.display = 'block'; // Show by default if credit card is checked
+            } else {
+                creditCardForm.style.display = 'none'; // Hide if PayPal is selected
+            }
+        });
+                    function toggleCartItems() {
+                var cartItems = document.getElementById("cart-items");
+                var chevronIcon = document.getElementById("chevron-icon");
+                
+                if (cartItems.style.display === "none") {
+                    cartItems.style.display = "block"; // Show items
+                    chevronIcon.classList.remove("fa-chevron-down"); // Change icon to up
+                    chevronIcon.classList.add("fa-chevron-up");
+                } else {
+                    cartItems.style.display = "none"; // Hide items
+                    chevronIcon.classList.remove("fa-chevron-up"); // Change icon to down
+                    chevronIcon.classList.add("fa-chevron-down");
+                }
+            }
+            const countdownTime = 10 * 60; // 10 minutes in seconds
+
+function startCountdown(duration) {
+    let timer = duration, minutes, seconds;
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        // Format minutes and seconds
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        countdownElement.textContent = minutes + ":" + seconds;
+
+        // Stop the countdown when it reaches zero
+        if (--timer < 0) {
+            clearInterval(interval);
+            countdownElement.textContent = "00:00"; // Final message when timer ends
+            // You can add additional actions here if needed
+        }
+    }, 1000);
+}
+
+// Start the countdown
+startCountdown(countdownTime);
+
+
+
+            </script>
+    </body>
+</html>

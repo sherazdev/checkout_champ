@@ -1,0 +1,174 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'RoobertPRO', sans-serif;
+}
+@font-face {
+    font-family: 'RoobertPRO';
+    src: url('assets/fonts/RoobertPRO-Regular.ttf') format('truetype'); /* Using only TTF */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.free_shipping {
+    border: 1px solid green;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-left-color: green;
+    padding: 0px 0px 0 0;
+    border-left: 0;
+    border-radius: 50px;
+}
+.order_text{
+    color: #000;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'RoobertPRO', sans-serif;
+}
+
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between icon and text */
+  }
+ .form-label{
+    font-size: 16px;
+    font-weight: 500;
+ }
+ .form-check-label{
+ 
+    font-size: 16.91px;
+    font-weight: 500;
+    line-height: 21.37px;
+    text-align: left;
+ }
+ .form-check-input {
+    border: 1px solid #1C3912; /* Border color */
+}
+
+/* Change the checked color */
+.form-check-input:checked {
+    background-color: #1C3912; /* Background color when checked */
+    border-color: #1C3912; /* Border color when checked */
+}
+
+.form-check-input:checked:focus {
+    box-shadow: 0 0 0 0.2rem rgba(28, 57, 18, 0.25); /* Optional: shadow on focus */
+}
+
+  .card-header {
+    border-bottom: 2px solid #ccc; 
+}
+.me-2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+.me-8{
+    font-size: 20px;
+    font-weight: 700;
+}
+.title-summary{
+    font-size: 17.62px;
+    font-weight: 500;
+    color: #000000;
+
+}
+.short-title{
+    font-size: 15.11px;
+    font-weight: 500;
+    color: #818EA1;
+}
+  .custom-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+    margin-left: -1px;
+    z-index: 1; /* Ensure button is on top */
+}
+.product-img {
+    position: absolute;
+    top: -1%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.input-group {
+    height: 65px; /* Keep height consistent */
+}
+
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #818EA1 !important; /* Desired color */
+    opacity: 1; /* Full visibility */
+}
+
+
+  .customer-count {
+    
+    border-radius: 50px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header_content {
+    border-bottom: 2px solid #767676;
+    height: 120px;
+  }
+  .shipping{
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .size_content{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'RoobertPRO-Regular', sans-serif;
+  }
+
+  .text-div {
+    top: 15%;
+    left: 14%;
+    width: 346px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    transform: translate(2%,-12%);
+  }
+.mb-3 {
+    margin-bottom: 1rem; /* Adjust margin as needed */
+}
+.iti {
+    width: 100%;
+}
+.credit-card-form {
+    display: none;
+}
+.input-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 88%; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #999; 
+    background-color: transparent;
+    padding: 0;
+    
+}
+.tra_title{
+    font-size: 17px;
+    color: #707070;
+    font-weight: 300;
+}
+
+p{
+    padding: 0;
+}
